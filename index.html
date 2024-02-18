@@ -1,76 +1,178 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buying Ticket</title>
     <!--css link-->
-<link rel="stylesheet" href="style/styles.css">
-<!--tailwind and css link-->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/styles.css">
+    <!--tailwind and css link-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-raleway">
+
+<body class="font-raleway container mx-auto">
     <header>
-    </header>
-    
-    <main>  
-    <!--banner section-->
-      <section>
-         <!--navbar-->
-      <nav class="flex justify-center items-center">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        <nav class="items-center px-20">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a> Home</a></li>
+                            <li>
+                                <a>About</a>
+                            </li>
+                            <li>
+                                <a>Destination</a>
+                            </li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-3xl font-semibold">P-Ticket</a>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a> Home</a></li>
-                  <li>
-                    <a>About</a>
-                  </li>
-                  <li>
-                    <a>Destination</a>
-                  </li>
-                  <li><a>Search</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-3xl font-semibold">P-Ticket</a>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a> Home</a></li>
+                        <li>
+                            <a>About</a>
+                        </li>
+                        <li><a> Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <button class="btn bg-[#1DD1001A]">
+                        <img src="images/bus-icon.png" alt="">
+                        <p class="text-xl text-[#1DD100]">Bus</p>
+                    </button>
+                </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--banner section-->
+
+        <section
+            class="min-h-screen bg-[url(images/banner.png)] bg-no-repeat bg-top sm:bg-auto text-white flex justify-center items-center">
+            <!--banner sce-->
+            <div class="flex flex-col items-center justify-cente pb-20">
+
+                <h1 class="text-6xl text-white font-extrabold">End-to-End Travel with</h1>
+                <br>
+                <span class="text-6xl text-[#1DD100] font-extrabold">P Paribahan</span>
+                <p class="p-10">End-to-End Travel with P Paribahan
+                    Yes, you can run unit tests and view the results directly within the app. The <br
+                        class="items-center"> integrated testing features allow for a streamlined .
+                    Buy Tickets</p>
+                <button class="btn text-black bg-[#1DD100] border-none"> Buy Tickets</button>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a> Home</a></li>
-                <li>
-                  <a>About</a>
-                </li>
-                <li><a> Destination</a></li>
-                <li><a>Search</a></li>
-              </ul>
+        </section>
+        
+        <div class="items-center justify-center bg-top py-30 px-20 ">
+         <img src="images/Group 14.png" alt="">
+        </div>
+        <!--best offer section-->
+       <section class="flex flex-col justify-center items-center py-20 gap-20">
+        <h2 class="font-extrabold text-4xl">Best offers for you</h2>
+        <div class="flex flex-row gap-12">
+            <div class="flex bg-[#FFBF0F] bg-no-repeat rounded-2xl align-middle font-inter ">
+                <!--for 15%-->
+                <div class="p-12 items-center" >
+                    <h2 class="text-[#030712CC] text-3xl font-extrabold" >15% OFF</h2>
+                 <p class="text-xl text-[#030712CC] ">on your next purchase</p>   
+                  <p class="text-lg text-[#03071280]">use by January 2024</p>
+                </div>  
+                <div>
+                   <!--for 15% ticket-->
+                <img src="images/cupon-devider.png" alt="">
+                </div>
+                <div class="p-12 items-center">
+                    <h3 class="font-semibold text-2xl">NEW15</h3>
+                  <p>Coupon Code</p>  
+                </div>
             </div>
-            <div class="navbar-end ">
-             <button class="btn bg-[#1DD1001A]">
-                <img src="images/bus-icon.png" alt="">
-                <p class="text-xl text-[#1DD100]">Bus</p>
-             </button>
-          </div>
-      </nav>
-        <!--banner sce-->
-        <div>
+            <div class="flex bg-[#F78C9C] bg-no-repeat rounded-2xl align-middle font-inter">
+                <!--for 20%-->
+                <div class="p-12 items-center">
+                    <h2 class="text-[#030712CC] text-3xl font-extrabold">20% OFF</h2>
+                 <p class="text-xl text-[#030712CC] ">on your next purchase</p>   
+                  <p class="text-lg text-[#03071280]">use by January 2024</p>
+                </div>  
+                <div>
+                   <!--for 15% ticket-->
+                <img src="images/cupon-devider.png" alt="">
+                </div>
+                <div class="p-12 items-center">
+                    <h3 class="font-semibold text-2xl">Couple 20</h3>
+                  <p class="text-[#03071266] text-xl">Coupon Code</p>  
+                </div>
+            </div>
             
         </div>
-      </section>
-      <!--best offer section-->
-      <section>
+        <button class="btn btn-outline btn-success">See All Offers</button>
+       </section>
+        <!--poribohon-->
+        <section>
+         <div>
+            <!--here header of poribohon-->
+            <h2>P.H Paribahan</h2>
+            <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+         </div>
+        <div>
+            <!--deperture time table-->
+            <div>
+                <div>
+            <!--logo side-->   
+             <div>
+                <!--bus-->
+                <div><img src="images/bus-logo.png" alt=""></div>
+             </div>
+             <div>
+                <h4>Greenline Paribahan</h4>
+                <p>Coach-009-WEB ! AC_Business</p>
+            </div>
+             </div>
+             <div>
+                <!--seats-->
+                <button class="btn">
+                    <img src="images/seat-green.png" alt="">
+                    <span>40 Seats left</span>
+                </button>
+             </div>
+            </div>
 
-      </section>
-      <!--poribohon-->
-      <section>
+            <div>
+               <!--images-->
+                <img src="images/info-devider.png" alt="">
+            </div>
+            <div>
+                <!--dollar sign sign-->
+                <img src="images/fare.png" alt="">
+                <h3>550 Taka</h3>
+                  <p>Per Seat</p>  
+            </div>
+        </div>
+        <!--booking ticket section-->
+        <div>
 
-      </section>
+        </div>
+        </section>
+        <section>
+            <!--su-->
+        </section>
     </main>
-    <footer>
-      
-    </footer>
+        <footer>
+            <img src="images/Group 110.png" alt="">
+        </footer>
 </body>
+
 </html>
