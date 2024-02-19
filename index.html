@@ -143,7 +143,8 @@
                         <div>
                             <button class="btn">
                                 <img src="images/seat-green.png" alt="">
-                                <span class="available">8 Seats left</span>
+                                <p><span id="available"> 8 </span> Seats left </p>
+                                
                             </button>
                         </div>
                     </div>
@@ -212,7 +213,9 @@
                                 <img src="images/seat-gray.png" alt="">
                             </div>
                             <div>
-                                <span>Available</span>
+                                <span >Available</span>
+                                <span id="available">8</span>
+                                
                             </div>
                         </div>
                         <div class="flex">
@@ -230,21 +233,26 @@
                     <div class="bg-10 px-50 ml-[530px]">
                         <button class="btn"> <img src="images/wheel.png" alt=""></button>
                     </div>
-                    <div id="seats">
+                    <div>
+                        <!-- Row - 1 -->
                         <div class="flex gap-x-16 py-6">
                             <div  class="flex gap-x-8">
                                 <p class="flex justify-center items-center text-[16px] font-medium text-[#03071280]">A</p>
-                                <button id="button"class="bttn bg-[#F7F8F8] text-[#03071280] text-[16px] font-medium w-[110px] h-[56px] flex justify-center items-center rounded-xl">A1</button>
+
+                                <button class="bttn bg-[#F7F8F8] text-[#03071280] text-[16px] font-medium w-[110px] h-[56px] flex justify-center items-center rounded-xl">A1</button>
                                      
                                 <button id="button1" class="bttn bg-[#F7F8F8] text-[#03071280] text-[16px] font-medium w-[110px] h-[56px] flex justify-center items-center rounded-xl">A2</button>
                                    
                             </div>
     
                             <div  class="flex gap-x-8">
-                                <button id="button2" class="bttn bg-[#F7F8F8] text-[#03071280] text-[16px] font-medium w-[110px] h-[56px] flex justify-center items-center rounded-xl">A3</button>
-                                <button id="button3" class="bttn bg-[#F7F8F8] text-[#03071280] text-[16px] font-medium w-[110px] h-[56px] flex justify-center items-center rounded-xl">A4</button>
+                                <button  class="bttn bg-[#F7F8F8] text-[#03071280] text-[16px] font-medium w-[110px] h-[56px] flex justify-center items-center rounded-xl">A3</button>
+
+                                <button  class="bttn bg-[#F7F8F8] text-[#03071280] text-[16px] font-medium w-[110px] h-[56px] flex justify-center items-center rounded-xl">A4</button>
                             </div>
                         </div>
+
+                        <!-- Row-2 -->
                         <div class="flex gap-x-16 py-6">
                             <div  class="flex gap-x-8">
                                 <p class="flex justify-center items-center text-[16px] font-medium text-[#03071280]">B</p>
@@ -266,7 +274,7 @@
                         <div class="flex gap-10 pt-10">
                             <div>
                                 <p>Seat
-                                    <span> <sup id="count" class="bg-[#1DD100] p-2">2</sup></span>
+                                    <span id="count" class="bg-[#1DD100] p-2"> 0 </span>
                                 </p>
                             </div>
                             <div>
@@ -279,7 +287,7 @@
 
                         <div class="flex gap-10 pt-10">
                             <div>
-                                <p>C2</p>
+                                <p>A1</p>
                             </div>
                             <div>
                                 <p>Economoy</p>
@@ -290,7 +298,7 @@
                         </div>
                         <div class="flex gap-10 pt-10">
                             <div>
-                                <p>C2</p>
+                                <p>A2</p>
                             </div>
                             <div>
                                 <p>Economoy</p>
@@ -321,7 +329,7 @@
                             <p class="texi-xl font-bold">Grand Total</p>
                         </div>
                         <div>
-                            <p class="texi-xl font-bold"> <span class="grandTaka">BDT 1100</span> </p>
+                            <p class="texi-xl font-bold">BDT <span id="grandTaka">0</span> </p>
                         </div>
                     </div>
                     <div class="gap-5 pt-10">
@@ -338,16 +346,18 @@
                     <div>
 
                         <!-- Open the modal using ID.showModal() method -->
-<button class="btn" onclick="my_modal_2.showModal()">Next</button>
+<button class="btn bg-[#27AE60] btn-wide" onclick="my_modal_2.showModal()">Next</button>
 <dialog id="my_modal_2" class="modal">
-  <div class="modal-box">
-    <img src="images/" alt="">
-    <h3 class="font-bold text-lg">Hello!</h3>
-    <p class="py-4">Press ESC key or click outside to close</p>
+  <div class="modal-box flex flex-col justify-center items-center">
+    <img src="images/success.png" alt="">
+    <h3 class="font-bold text-lg">Thank you for Booking Our Bus Seats.<br> 
+        We are working hard to find the best service and deals for you. 
+      </h3>
+    <p class="py-4">  Shortly you will find a confirmation in your email.</p>
+    <form method="dialog" class="modal-backdrop">
+      <button class="btn rounded-3xl bg-[#27AE60]"> continue</button>
+    </form>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>Next</button>
-  </form>
 </dialog>
                     </div>
                 </div>                 
